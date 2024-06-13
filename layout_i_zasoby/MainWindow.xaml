@@ -1,12 +1,32 @@
-﻿<Window x:Class="layout_i_zasoby.MainWindow"
+<Window x:Class="layout_i_zasoby.MainWindow"
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:layout_i_zasoby"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
+        Title="Layout_I_Zasoby" Height="450" Width="800">
+
     <Grid>
-        
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="Auto"/>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+
+        <WrapPanel Grid.Row="0" Grid.Column="1" Margin="10" Orientation="Horizontal">
+            <Button Style="{StaticResource Style}" Content="Button 1" Margin="5"/>
+            <Button Style="{StaticResource Style}" Content="Button 2" Margin="5"/>
+            <Button Style="{StaticResource Style}" Content="Button 3" Margin="5"/>
+        </WrapPanel>
+
+        <StackPanel Grid.Row="1" Grid.Column="0" Margin="10" Orientation="Vertical">
+            <Label Content="Group 1" Style="{StaticResource Special}" Margin="5"/>
+            <Label Content="Group 2" Style="{StaticResource BaseLabel}" Margin="5"/>
+            <Label Content="Group 3" Style="{StaticResource BaseLabel}" Margin="5"/>
+        </StackPanel>
     </Grid>
 </Window>
