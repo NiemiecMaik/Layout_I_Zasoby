@@ -18,15 +18,15 @@
         </Grid.ColumnDefinitions>
 
         <WrapPanel Grid.Row="0" Grid.Column="1" Margin="10" Orientation="Horizontal">
-            <Button Style="{StaticResource Style}" Content="Button 1" Margin="5"/>
-            <Button Style="{StaticResource Style}" Content="Button 2" Margin="5"/>
-            <Button Style="{StaticResource Style}" Content="Button 3" Margin="5"/>
+            <Button Style="{StaticResource Style}" Content="Przycisk 1" Margin="5"/>
+            <Button Style="{StaticResource Style}" Content="Przycisk 2" Margin="5"/>
+            <Button Style="{StaticResource Style}" Content="Przycisk 3" Margin="5"/>
         </WrapPanel>
 
         <StackPanel Grid.Row="1" Grid.Column="0" Margin="10" Orientation="Vertical">
-            <Label Content="Group 1" Style="{StaticResource Special}" Margin="5"/>
-            <Label Content="Group 2" Style="{StaticResource BaseLabel}" Margin="5"/>
-            <Label Content="Group 3" Style="{StaticResource BaseLabel}" Margin="5"/>
+            <Label Content="Grupa 1" Style="{StaticResource Special}" Margin="5"/>
+            <Label Content="Grupa 2" Style="{StaticResource BaseLabel}" Margin="5"/>
+            <Label Content="Grupa 3" Style="{StaticResource BaseLabel}" Margin="5"/>
         </StackPanel>
     </Grid>
 </Window>
